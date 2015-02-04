@@ -3,7 +3,7 @@ def update_brew
 end
 
 def install_deps
-  ["phantomjs",'slack-notifier'].map { |d| system("sudo gem install #{d} --verbose") }
+  ["phantomjs",'slack-notifier','nomad-cli'].map { |d| system("sudo gem install #{d} --verbose") }
 end
 
 def update_xcode_cmd_tools
