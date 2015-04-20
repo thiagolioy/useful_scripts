@@ -11,4 +11,5 @@ end
 
 puts("Removing fastlane tools..")
 remove_fastlane_tools
+puts("Removing fastlane dep tools..")
 remove_fastlane_dep_tools
