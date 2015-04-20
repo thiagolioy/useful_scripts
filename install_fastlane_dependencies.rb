@@ -11,15 +11,14 @@ def update_xcode_cmd_tools
 end
 
 def install_fastlane_tools
-  ["fastlane","snapshot","frameit",
-    "produce","sigh","pem","deliver"].map { |d| system("sudo gem install #{d} --verbose") }
+  ["fastlane"].map { |d| system("sudo gem install #{d} --verbose") }
 end
 
-puts("Updating Homebrew ..")
-update_brew
-puts("Installing Dependencies ..")
-install_deps
-puts("Updating xcode cmd line tools ..")
-update_xcode_cmd_tools
+#puts("Updating Homebrew ..")
+# update_brew
+#puts("Installing Dependencies ..")
+# install_deps
+#puts("Updating xcode cmd line tools ..")
+# update_xcode_cmd_tools
 puts("Installing Fastlane tools ..")
 install_fastlane_tools

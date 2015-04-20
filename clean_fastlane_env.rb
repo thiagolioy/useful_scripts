@@ -4,7 +4,9 @@ def remove_fastlane_tools
 end
 
 def remove_fastlane_dep_tools
-  ["phantomjs",'rest-client','slack-notifier','nomad-cli'].map { |d| system("sudo gem uninstall #{d}") }
+  ["phantomjs",'rest-client','slack-notifier',
+    'nomad-cli','cupertino','houston','dubai',
+    'venice','shenzhen'].map { |d| system("sudo gem uninstall #{d}") }
 end
 
 puts("Removing fastlane tools..")
